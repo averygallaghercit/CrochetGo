@@ -1,0 +1,254 @@
+/* Color Palette:
+       Background Color: indigo
+       Header Color: #330159
+       Accent Color: #a3a30b
+       Text Color: white
+ */
+
+/* Font Choices:
+    Heading Font: Henny Penny
+    Body Font: DM Sans
+ */
+:root {
+    --header-color: #330159FF;
+    --accent-color: #a3a30b;
+    --deep-header-color: #220537FF;
+}
+    /*use var(--accent-color) when you want to input into a color field*/
+
+.henny-penny-regular {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.dm-sans {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body{
+    background-color: indigo;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    margin: 10px;
+}
+
+main{
+    margin: 50px;
+}
+
+h1.henny-penny-regular{
+    color: var(--accent-color);
+}
+h2.henny-penny-regular{
+    color: white;
+    text-align: center;
+}
+p.dm-sans{
+    color: white;
+    text-align: center;
+}
+div.headers.henny-penny-regular{
+    color: white;
+}
+
+#page-header{
+    display: flex;
+    background-color: var(--header-color);
+    color: white;
+    justify-content: space-around;
+    text-align: center;
+    padding: 6px 5px;
+    /*Do I want to fix the position of this on all the pages?*/
+}
+a:link,
+a:visited,
+a:hover,
+a:active{
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+img {
+    border: 5px solid var(--accent-color);
+}
+
+#supplies-page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+#supplies-page-grid > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#supplies-page-grid img {
+    margin-bottom: 20px;
+}
+
+#next-steps-flex {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+
+#how-to-hold-a-hook-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+}
+
+
+#yarning-over-grid{
+    display: grid;
+    grid-template-columns: 1.75fr 1fr;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+}
+
+#slip-knot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.75fr;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+}
+
+#counting-stitches-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+#tension-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.75fr 1fr;
+    align-items: center;
+    gap: 100px;
+}
+
+#tension-grid img {
+    width: 70%;
+    height: auto;
+}
+#finishing-projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+}
+#finishing-projects-grid img {
+    max-width: 100%;
+}
+
+#how-to-hold-a-hook-grid video,
+#slip-knot-grid video,
+#yarning-over-grid video {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    border: 5px solid var(--accent-color);
+}
+
+
+#finishing-projects-grid > div {
+    text-align: center;
+}
+#next-steps-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin: 15px;
+}
+
+#next-steps-grid div {
+    background-color: var(--header-color);
+    padding: 15px;
+}
+
+#abbreviations-flex {
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+}
+
+#project-inspo-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#discord-flex{
+    display: flex;
+    background-color: var(--header-color);
+    color: var(--accent-color);
+    justify-content: center;
+    align-items: center;
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+#home-page-img-flex,
+#pattern-brackets-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#center-me,
+.center-me{
+    text-align: center;
+}
+
+img.circle {
+    object-fit: cover;
+    height: 40%;
+    width: 40vh;
+    border-radius: 50%;
+    border: 6px solid var(--accent-color);
+}
+
+img.round {
+    border-radius: 20%;
+}
+video {
+    border: 5px solid var(--accent-color);
+}
+
+table {
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.big {
+    font-size: 34pt;
+}
+
+.section-big{
+    font-size: 25pt;
+}
+
+.mid{
+    font-size: 20pt;
+}
+
+.written {
+    font-size: 16pt;
+}
