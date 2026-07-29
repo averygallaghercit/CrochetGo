@@ -153,9 +153,9 @@ img {
     max-width: 100%;
 }
 
-#how-to-hold-a-hook-grid video,
-#slip-knot-grid video,
-#yarning-over-grid video {
+#how-to-hold-a-hook-grid iframe,
+#slip-knot-grid iframe,
+#yarning-over-grid iframe {
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -227,15 +227,49 @@ img.circle {
 img.round {
     border-radius: 20%;
 }
-video {
+iframe {
     border: 5px solid var(--accent-color);
 }
 
-table {
-    text-align: center;
-    justify-content: center;
+.stitches-grid-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
     gap: 50px;
+    width: 100%;
 }
+
+.stitches-grid-h2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.stitches-grid-video {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.stitches-grid-video iframe {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.stitches-grid-p {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    width: 100%;
+    align-items: statr;
+}
+
+
 
 .big {
     font-size: 34pt;
